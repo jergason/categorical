@@ -15,6 +15,6 @@
   "description": "An implementation of a categorical distribution in JavaScript. Allows you to do draw randomly from many events that have different probabilities.",
   "main": "categorical.js",
   "scripts": {
-    "test": "node_modules/.bin/mocha test"
+    "test": "node_modules/.bin/mocha test/*"
   }
 }

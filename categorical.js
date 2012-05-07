@@ -21,6 +21,15 @@
       , probabilityAccumulator = 0
       ;
 
+
+    if (!Array.isArray(items)) {
+      throw new Error('First argument to `createDistribution` must be an array, and is not.');
+    }
+
+    if (typeof scoreFunction !== 'function') {
+      throw new Error('Second argument to `createDistribution` must be a function, and it is ' + typeof scoreFunction);
+    }
+
     function calculateTopScore(item) {
       totalScore += scoreFunction(item);
     }
