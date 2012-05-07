@@ -1,0 +1,20 @@
+{
+  "author": "Jamison Dance <jergason@gmail.com> (http://jamisondance.com)",
+  "name": "categorical",
+  "version": "0.0.2",
+  "dependencies": {
+    "redis": "*"
+  },
+  "devDependencies": {
+    "mocha": "1.0.x"
+  },
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  },
+  "description": "An implementation of a categorical distribution in JavaScript. Allows you to do draw randomly from many events that have different probabilities.",
+  "main": "categorical.js",
+  "scripts": {
+    "test": "node_modules/.bin/mocha test"
+  }
+}
