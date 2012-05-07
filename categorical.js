@@ -83,8 +83,15 @@
     throw new Error('Reached end of distribution without finding anything. Invalid distribution.');
   }
 
-  module.exports = {
-      createDistribution: createDistribution
-    , draw: getRandomItem
-  };
+  if (typeof module === 'undefined') {
+    // we are in a browser
+    window.categorical = categorical;
+  }
+  else {
+    module.exports = {
+        createDistribution: createDistribution
+      , draw: getRandomItem
+    };
+  }
+
 }());
