@@ -80,7 +80,7 @@
 
       i++;
     }
-    throw new Error('Reached end of distribution without finding anything. This should not happen!');
+    throw new Error('Reached end of distribution without finding anything. Invalid distribution.');
   }
 
   module.exports = {
