@@ -38,7 +38,7 @@
 
     // For it to be a probablity distribution, all of the scores need to add up to 1
     // so we normalize
-    // 1 = toralScore * normalizer
+    // 1 = totalScore * normalizer
     // 1 / totalScore = normalizer
     normalizer = 1 / totalScore;
 
@@ -85,7 +85,10 @@
 
   if (typeof module === 'undefined') {
     // we are in a browser
-    window.categorical = categorical;
+    window.categorical = {
+      createDistribution: createDistribution,
+      draw: getRandomItem
+    };
   }
   else {
     module.exports = {
