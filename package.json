@@ -1,14 +1,10 @@
 {
   "author": "Jamison Dance <jergason@gmail.com> (http://jamisondance.com)",
   "name": "categorical",
-  "version": "0.0.2",
-  "dependencies": {
-    "redis": "*"
-  },
+  "version": "0.0.3",
   "devDependencies": {
     "mocha": "1.0.x"
   },
-  "optionalDependencies": {},
   "engines": {
     "node": "*"
   },
